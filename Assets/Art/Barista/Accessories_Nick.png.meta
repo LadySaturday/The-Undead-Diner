@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: c624366954d910244b007814aa5440e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1347180311335694834
+    second: Accessories_Nick_0
+  - first:
+      213: -4463312664998296353
+    second: Accessories_Nick_1
+  - first:
+      213: 1257165195714045174
+    second: Accessories_Nick_2
+  - first:
+      213: 1752978607007993791
+    second: Accessories_Nick_3
+  - first:
+      213: -7752722505631061009
+    second: Accessories_Nick_4
+  - first:
+      213: -6721195269022370624
+    second: Accessories_Nick_5
+  - first:
+      213: 5919696652049506506
+    second: Accessories_Nick_6
+  - first:
+      213: 7177672673415555361
+    second: Accessories_Nick_7
+  - first:
+      213: 4766076672828587213
+    second: Accessories_Nick_8
+  - first:
+      213: -7468890335580580018
+    second: Accessories_Nick_9
+  - first:
+      213: -7241740609425272994
+    second: Accessories_Nick_10
+  - first:
+      213: 7834576593593323210
+    second: Accessories_Nick_11
+  - first:
+      213: 5420885232426677111
+    second: Accessories_Nick_12
+  - first:
+      213: -8892953143727976198
+    second: Accessories_Nick_13
+  - first:
+      213: 4169374839344249481
+    second: Accessories_Nick_14
+  - first:
+      213: 2926153318721498319
+    second: Accessories_Nick_15
+  - first:
+      213: -4652446748542196758
+    second: Accessories_Nick_16
+  - first:
+      213: 2687483191173717628
+    second: Accessories_Nick_17
+  - first:
+      213: -5429753283829708071
+    second: Accessories_Nick_18
+  - first:
+      213: 5307103762596713040
+    second: Accessories_Nick_19
+  - first:
+      213: -1295181952882115119
+    second: Accessories_Nick_20
+  - first:
+      213: -8776690472621375166
+    second: Accessories_Nick_21
+  - first:
+      213: 8115521086446756459
+    second: Accessories_Nick_22
+  - first:
+      213: -1677509328614209621
+    second: Accessories_Nick_23
+  - first:
+      213: -1116465616433815501
+    second: Accessories_Nick_24
+  - first:
+      213: 1486027486622877472
+    second: Accessories_Nick_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Accessories_Nick_0
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 859
+        width: 149
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e8f6ef4aadd4de0800000000000000
+      internalID: -1347180311335694834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_1
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 673
+        width: 147
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4464167c02f02c0800000000000000
+      internalID: -4463312664998296353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_2
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 449
+        width: 140
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f42582b519527110800000000000000
+      internalID: 1257165195714045174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_3
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 282
+        width: 145
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf029161c4d35810800000000000000
+      internalID: 1752978607007993791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_4
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 81
+        width: 139
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb2fa1f4fbc86490800000000000000
+      internalID: -7752722505631061009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_5
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 240
+        width: 67
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4b2e3638489b2a0800000000000000
+      internalID: -6721195269022370624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_6
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 414
+        width: 352
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0ea7bbdbcf62250800000000000000
+      internalID: 5919696652049506506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 21
+        width: 566
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12966fc74473c9360800000000000000
+      internalID: 7177672673415555361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_8
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1152
+        width: 291
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc39307b71842240800000000000000
+      internalID: 4766076672828587213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1138
+        width: 354
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e471f59cfcb295890800000000000000
+      internalID: -7468890335580580018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_10
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1606
+        width: 118
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f8fabb84b208b90800000000000000
+      internalID: -7241740609425272994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessories_Nick_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1724
+        width: 328
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace48ba07e10abc60800000000000000
+      internalID: 7834576593593323210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
