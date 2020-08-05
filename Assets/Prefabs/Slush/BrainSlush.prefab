@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5792748826297183537}
   - component: {fileID: 5792748826297183538}
-  - component: {fileID: 2123513470526801410}
-  - component: {fileID: 813321243451479141}
   m_Layer: 0
   m_Name: BrainSlush
   m_TagString: BrainSlush
@@ -83,29 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2123513470526801410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5792748826297183539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57839487e6f8e9647b1bc85d8d8d2140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &813321243451479141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5792748826297183539}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 250b9e9f8eba86244a49c64436d7ab27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  product:
-  - {fileID: 0}
