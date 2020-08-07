@@ -54,7 +54,7 @@ public class DoubleOrderManager : MonoBehaviour
            if (twoWindows)   
                StartCoroutine(ZombieOrder(false, delayTime, 1));
            
-           foreach (GameObject item in productImages)
+        foreach (GameObject item in productImages)
         {
             item.transform.localScale = new Vector3(0.55f, 0.55f, 1);
         }
@@ -68,45 +68,18 @@ public class DoubleOrderManager : MonoBehaviour
     private void checkHands()
     {
         if (leftHandObject.transform.childCount > 0)
-           playerHolding[0] = leftHandObject.transform.GetChild(0).gameObject;
+            playerHolding[0] = leftHandObject.transform.GetChild(0).gameObject;
+        else
+            playerHolding[0] = null;
 
         if (rightHandObject.transform.childCount > 0)
             playerHolding[1] = rightHandObject.transform.GetChild(0).gameObject;
+        else
+            playerHolding[1] = null;
     }
-    /*
-    public void createOrder(int leftOrRight, GameObject[] orderContents)
-    {
-        isThereAnOrder = true;
-
-
-        imageOffset.y = -5;
-        numberOfOrderItems = rnd.Next(1, orderContents.Length);//between 1 and 3 items per order  
-        zombieOrder = new GameObject[orderContents.Length];//temp order
-
-        Instantiate(orderBackgrounds[orderContents.Length ], OrderVisuals[leftOrRight].transform);//Spawn correct background for number of items
-
-        for (int x = 0; x < orderContents.Length; x++)
-        {
-           
-            zombieOrder[x] = Instantiate(orderContents[x],
-                OrderVisuals[leftOrRight].transform.position + imageOffset,
-                Quaternion.identity,
-                OrderVisuals[leftOrRight].transform);
-
-            imageOffset.y += -1.5f;//places next order visual lower
-
-            zombieOrders[leftOrRight, x] = zombieOrder[x];//puts the temp order in the static reference
-        }
-        
-           // Instantiate(zTimer, OrderVisuals[leftOrRight].transform);//the timer needs to be added onto the order visuals prefab
-    }*/
-   
-
+  
         IEnumerator ZombieOrder(bool status, float delayTime, int leftOrRight)
         {
-
-            yield return new WaitForSeconds(delayTime*0.75f);
-
 
             yield return new WaitForSeconds(delayTime);
 
@@ -117,20 +90,20 @@ public class DoubleOrderManager : MonoBehaviour
 
             Instantiate(orderBackgrounds[numberOfOrderItems - 1], OrderVisuals[leftOrRight].transform);//Spawn correct background for number of items
 
-        for (int x = 0; x < numberOfOrderItems; x++)
-        {
-            int y = rnd.Next(products.Length);//choose any number corresponing to a product
-            zombieOrder[x] = Instantiate(productImages[y], 
+            for (int x = 0; x < numberOfOrderItems; x++)
+            {
+                int y = rnd.Next(products.Length);//choose any number corresponing to a product
+                zombieOrder[x] = Instantiate(productImages[y], 
                 OrderVisuals[leftOrRight].transform.position + imageOffset, 
                 Quaternion.identity, 
                 OrderVisuals[leftOrRight].transform);
 
-           imageOffset.y += -0.75f;//places next order visual lower
+                imageOffset.y += -0.75f;//places next order visual lower
 
-            zombieOrders[leftOrRight, x] = zombieOrder[x];//puts the temp order in the static reference
-        }
+                zombieOrders[leftOrRight, x] = zombieOrder[x];//puts the temp order in the static reference
+            }
         
-    }
+        }
 
 
     public void ClearOrder()//player picks up wrong thing. taps garbage. removes items.
@@ -143,16 +116,24 @@ public class DoubleOrderManager : MonoBehaviour
 
     }
 
-    public void RemoveItem(int itemNumber)//Order item is filled.
-    {
-        Destroy(playerHolding[itemNumber]);
-        playerHolding[itemNumber] = null;
-    }
 
     
 
     public void CheckOrder(int leftOrRight)
     {
+        /*
+        foreach(GameObject orderItem in zombieOrders)
+        {
+            foreach(GameObject playerHandObject in playerHolding)
+            {
+                if (playerHandObject.tag == orderItem.tag)
+                {
+                    Destroy(orderItem);
+                    Destroy(playerHandObject);
+                }
+            }
+        }*/
+        
         for (int zombieOrderNumber = 0; zombieOrderNumber <= 2; zombieOrderNumber++)//increases to test every item in Zombie's order
         {
             for (int playerHandNumber = 0; playerHandNumber < 2; playerHandNumber++)//increases to test every item in Player's hand
@@ -165,10 +146,7 @@ public class DoubleOrderManager : MonoBehaviour
                         {
                             Destroy(zombieOrders[leftOrRight,zombieOrderNumber]);
                             zombieOrders[leftOrRight,zombieOrderNumber] = null;//that item becomes null
-                            RemoveItem(playerHandNumber);//remove it from the player's hand
-
-                           // if (leftOrRight == 0)
-                              //  Zombie[leftOrRight].GetComponent<Zombie_Controller>().Anim("Grab", true);
+       
                            
                         }
                     }
