@@ -38,11 +38,12 @@ public class Click : MonoBehaviour
         if (hit.collider != null)
         {
             //decide what to do with the object hit. 
-            if (hit.collider.tag == "Moveable")
-            {
-                //will decide what to do about animations once the target is reached
-                 Barista.GetComponent<BaristaController>().targetQueue.Enqueue(hit.collider.gameObject);//Add that product's position to the queue
-            }
+            // if (hit.collider.tag == "Moveable")
+            // {
+            //will decide what to do about animations once the target is reached
+            
+            Barista.GetComponent<BaristaController>().targetQueue.Enqueue(hit.collider.gameObject);//Add that product's position to the queue
+           // }
 
         }
 

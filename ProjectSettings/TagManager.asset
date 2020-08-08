@@ -13,6 +13,7 @@ TagManager:
   - CupOfJoeWithHand
   - CupOfJoeStep1
   - CupOfJoeStep2
+  - DontDestroy
   layers:
   - Default
   - TransparentFX

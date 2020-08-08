@@ -125,30 +125,16 @@ public class BaristaController : MonoBehaviour
 
     void ItemReached()
     {
-
-
-        /*  if (target.gameObject.transform.parent.name == "BrainSlushReadyToGrab(Clone)")
-          {
-              if (doubleClickCheck())
-              {
-                  target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("doubleTargetReached");
-                  target = null;
-
-                  targetQueue.Dequeue();//Remove position from the list
-                  targetQueue.Dequeue();//Remove position from the list
-                  return;
-              }
-              else
-              {
-                  target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
-              }
-          }
-          else
-          {
-              target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
-          }*/
-
-        target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
+        
+        if (target.gameObject.transform.parent.name == "MixingCupIdle")
+        { 
+            if (leftHandIsFull && rightHandIsFull)
+                target.gameObject.transform.parent.GetComponent<Animator>().SetBool("handsAreFull", true);
+            else
+                target.gameObject.transform.parent.GetComponent<Animator>().SetBool("handsAreFull", false);
+        }               
+        if (target.gameObject.transform.parent.GetComponent<Animator>().GetBool("canSetTrigger"))
+            target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
 
         target = null;
 
