@@ -52,11 +52,7 @@ public class DoubleOrderManager : MonoBehaviour
 
         orderVisual = gameObject.transform.GetChild(1).gameObject;
 
-
-        foreach (GameObject item in productImages)
-        {
-            item.transform.localScale = new Vector3(0.55f, 0.55f, 1);
-        }
+        
         
     }
     private void Update()
@@ -83,7 +79,7 @@ public class DoubleOrderManager : MonoBehaviour
     {
 
         yield return new WaitForSeconds(delayTime);
-        rnd = new System.Random();
+         rnd = new System.Random();
 
 
         imageOffset.y = -0.75f;

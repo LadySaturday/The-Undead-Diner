@@ -67,12 +67,6 @@ public class BaristaController : MonoBehaviour
 
     void moveToTarget()
     {
-        /*
-         * there exists a bug here where the mixing cup is clickble 
-         * so the target becomes null and causes an error when it's destroyed
-         * 
-         * 
-         * */
         if (targetQueue.Count > 0)//is there a target position?
         {
             target = targetQueue.Peek();//go to the first position in the queue
@@ -83,13 +77,13 @@ public class BaristaController : MonoBehaviour
             if (target.transform.position.x - gameObject.transform.position.x < 0)//if nick is facing away
             {
                 Vector3 lTemp = transform.localScale;
-                lTemp.x = -0.35f;
+                lTemp.x = -0.3972589f;
                 gameObject.transform.localScale = lTemp;//change local scale so she's facing the right way
             }
             else
             {
                 Vector3 lTemp = transform.localScale;
-                lTemp.x = 0.35f;
+                lTemp.x = 0.3972589f;
                 gameObject.transform.localScale = lTemp;
             }
 
@@ -107,21 +101,7 @@ public class BaristaController : MonoBehaviour
             }
         }
     }
-
-    private bool doubleClickCheck()
-    {
-        if (targetQueue.Count > 1)
-        {
-            if (targetQueue.ElementAt(0) == targetQueue.ElementAt(1))
-            {
-                return true;
-            }
-            else
-                return false;
-        }
-        else
-            return false;
-    }
+    
 
     void ItemReached()
     {

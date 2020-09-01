@@ -37,33 +37,6 @@ public class InstantiateProduct : MonoBehaviour
         }
     
     }
-    /*
-    private void InstantiateCupOfJoeVariation(int position)
-    {
-        try//asking about children in these statements doesn't solve the error. Instad, try to execute this, and return if the array is out of bounds.
-        {
-            if ((leftHand.transform.GetChild(0).tag == "CupOfJoe" && product[position].tag == "CupOfJoeWithHand") || (
-            leftHand.transform.GetChild(0).tag == "CupOfJoeWithHand" && product[position].tag == "CupOfJoeWithCream"))
-            {
-                Destroy(leftHand.transform.GetChild(0).gameObject);
-                Instantiate(product[position], leftHand.transform);
-
-            }
-            else if ((rightHand.transform.GetChild(0).tag == "CupOfJoe" && product[position].tag == "CupOfJoeWithHand") ||
-               (rightHand.transform.GetChild(0).tag == "CupOfJoeWithHand" && product[position].tag == "CupOfJoeWithCream"))//right hand isn't full
-            {
-
-                Destroy(leftHand.transform.GetChild(0).gameObject);
-                Instantiate(product[position], rightHand.transform);
-
-            }
-
-        }
-        catch
-        {
-            return;
-        }
-    }*/
 
     private void InstantiateCupOfJoeVariation(int position)
     {
