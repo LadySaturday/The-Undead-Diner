@@ -16,6 +16,7 @@ public class DoubleOrderManager : MonoBehaviour
     public GameObject[] orderBackgrounds;
     int numberOfOrderItems;//before an order is created, determine the number of items in that order
     private GameObject orderVisual;
+    private GameObject orderBg;
 
     private GameObject leftHandObject;
     private GameObject rightHandObject;
@@ -27,7 +28,7 @@ public class DoubleOrderManager : MonoBehaviour
 
     private bool isThereAnOrder;
 
-    private Vector3 imageOffset = new Vector3(1, -10);//the offset for the items in the order visual
+    private Vector3 imageOffset = new Vector3(0.9f, -10);//the offset for the items in the order visual
 
 
     System.Random rnd = new System.Random();//new random, for orders
@@ -82,19 +83,19 @@ public class DoubleOrderManager : MonoBehaviour
          rnd = new System.Random();
 
 
-        imageOffset.y = -0.75f;
+        imageOffset.y = -0.70f;
         numberOfOrderItems = rnd.Next(1, maxOrderNumber + 1);//between 1 and 3 items per order  
         zombieOrders = new GameObject[numberOfOrderItems];//temp order
 
-        Instantiate(orderBackgrounds[numberOfOrderItems - 1], orderVisual.transform);//Spawn correct background for number of items
+        orderBg = Instantiate(orderBackgrounds[numberOfOrderItems - 1], orderVisual.transform);//Spawn correct background for number of items
 
         for (int x = 0; x < numberOfOrderItems; x++)
         {
             int y = rnd.Next(products.Length);//choose any number corresponing to a product
             zombieOrders[x] = Instantiate(productImages[y],
-            orderVisual.transform.position + imageOffset,
+            orderBg.transform.position + imageOffset,
             Quaternion.identity,
-            orderVisual.transform);
+            orderBg.transform);
 
             imageOffset.y += -0.95f;//places next order visual lower
         }

@@ -15,6 +15,7 @@ TagManager:
   - CupOfJoeStep2
   - DontDestroy
   - CupOfJoeStep3
+  - OrderBg
   layers:
   - Default
   - TransparentFX
