@@ -24,6 +24,7 @@ public class DoubleOrderManager : MonoBehaviour
     private GameObject[] zombieOrders;
     //public GameObject zTimer;//reference to the zombie countdown timer
     private int numZombiesFailed;//the number of zombies the player didn't feed
+    private Animator anim;//animator attached to Zombie
 
 
     private bool isThereAnOrder;
@@ -41,6 +42,8 @@ public class DoubleOrderManager : MonoBehaviour
     void Start()
     {
         delayTime = 4;//Start up time
+
+        anim = gameObject.GetComponent<Animator>();
 
         leftHandObject = GameObject.FindGameObjectWithTag("LeftHand");
 
@@ -139,7 +142,7 @@ public class DoubleOrderManager : MonoBehaviour
                             playerHolding[playerHandNumber] = null;
                             Destroy(zombieOrders[ zombieOrderNumber].gameObject);
                             zombieOrders[ zombieOrderNumber] = null;//that item becomes null
-
+                               
                         }
                     }
 
@@ -167,7 +170,7 @@ public class DoubleOrderManager : MonoBehaviour
                     if (child.tag != "DontDestroy")
                         Destroy(child.gameObject);
                 }
-
+                anim.SetTrigger("Exit");
                 delayTime = rnd.Next(1, 4);//wait before new order appears
                                            // isThereAnOrder = true;
             if (!makingOrder)
