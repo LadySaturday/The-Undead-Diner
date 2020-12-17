@@ -12,6 +12,7 @@ public class InstantiateProduct : MonoBehaviour
     private GameObject leftHand;
     private GameObject barista;
     private GameObject rightHand;
+    
 
 
     private void Start()
@@ -77,6 +78,8 @@ public class InstantiateProduct : MonoBehaviour
             Instantiate(product[position], transform.parent);
 
     }
+
+    
 
 
     public void destroyGameObject()

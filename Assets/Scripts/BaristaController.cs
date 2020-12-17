@@ -10,7 +10,7 @@ public class BaristaController : MonoBehaviour
     public float speed = 5.0f;//Player speed (will be changeable later)
     public GameObject target;//position of target destination
     public Queue<GameObject> targetQueue = new Queue<GameObject>();//queue of target positions
-    private Vector2 position;//Nicks current position
+    private Vector2 position;//Barista's current position
     
     private Animator anim;
 
@@ -74,7 +74,7 @@ public class BaristaController : MonoBehaviour
             float step = speed * Time.deltaTime;
             anim.SetFloat("Speed", 1);
 
-            if (target.transform.position.x - gameObject.transform.position.x < 0)//if nick is facing away
+            if (target.transform.position.x - gameObject.transform.position.x < 0)//if barista is facing away
             {
                 Vector3 lTemp = transform.localScale;
                 lTemp.x = -0.3972589f;

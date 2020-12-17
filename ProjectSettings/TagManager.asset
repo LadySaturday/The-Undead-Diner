@@ -16,6 +16,9 @@ TagManager:
   - DontDestroy
   - CupOfJoeStep3
   - OrderBg
+  - Zombie
+  - ZombieL
+  - ZombieR
   layers:
   - Default
   - TransparentFX

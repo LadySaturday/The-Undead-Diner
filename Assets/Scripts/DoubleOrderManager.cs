@@ -22,8 +22,9 @@ public class DoubleOrderManager : MonoBehaviour
     private GameObject rightHandObject;
     private GameObject[] playerHolding = new GameObject[2];//the objects the player is holding
     private GameObject[] zombieOrders;
+    
     //public GameObject zTimer;//reference to the zombie countdown timer
-    private int numZombiesFailed;//the number of zombies the player didn't feed
+    private static int numZombiesFailed;//the number of zombies the player didn't feed
     private Animator anim;//animator attached to Zombie
 
 
@@ -102,7 +103,6 @@ public class DoubleOrderManager : MonoBehaviour
 
             imageOffset.y += -0.95f;//places next order visual lower
         }
-
         
         makingOrder = false;
 
@@ -149,78 +149,99 @@ public class DoubleOrderManager : MonoBehaviour
                 }
             }
         }
-        ///////THE BUG IS CAUSED BY A COUBLE CLIIIIIIIICKCKKCKCKCKCKKCK
-        
 
 
-
-        
-            isThereAnOrder = false;//do we need to create a new order?
-            for (int x = 0; x <= zombieOrders.Length-1; x++)
-            {
-                if (zombieOrders[x] != null)
-                {
-                    isThereAnOrder = true;//will only be turned "true" if an item in the Zombie's order still exists. Otherwise, a new order will be made
-                }
-            }
-            if (isThereAnOrder == false)
-            {
-                foreach (Transform child in orderVisual.transform)
-                {
-                    if (child.tag != "DontDestroy")
-                        Destroy(child.gameObject);
-                }
-                anim.SetTrigger("Exit");
-                delayTime = rnd.Next(1, 4);//wait before new order appears
-                                           // isThereAnOrder = true;
+        if (!isOrder())
+        {
+            DestroyChildren(orderVisual.transform);
+            anim.SetTrigger("Exit");
+            delayTime = rnd.Next(1, 4);//wait before new order appears
+                                       // isThereAnOrder = true;
             if (!makingOrder)
             {
                 StartCoroutine(ZombieOrder(false, delayTime));
 
                 makingOrder = true;
             }
-                
 
-            }
-        
-        
+        }
+
 
     }
 
-
-
-    /*
-    public void ZombieFailed(int leftOrRight)//did a zombie's timer run out? (Invoked by animation event)
+    private bool isOrder()
     {
+        isThereAnOrder = false;//do we need to create a new order?
+        for (int x = 0; x <= zombieOrders.Length - 1; x++)
+        {
+            if (zombieOrders[x] != null)
+            {
+                isThereAnOrder = true;//will only be turned "true" if an item in the Zombie's order still exists. Otherwise, a new order will be made
+
+            }
+        }
+       
+        return isThereAnOrder;
+    }
+
+    public static void DestroyChildren(Transform transform)
+    {
+        try
+        {
+            for (int i = transform.childCount - 1; i >= 0; --i)
+            {
+                GameObject.Destroy(transform.GetChild(i).gameObject);
+            }
+            transform.DetachChildren();
+        }
+        catch (System.Exception)
+        {
+            Debug.Log("Ignoring this exception for now");
+        }
+       
+    }
+
+    public void ZombieFailed()//did a zombie's timer run out? (Invoked by animation event)
+    {
+        anim.SetBool("Exit", true);
         numZombiesFailed++;//after 3 failed zombies, it's game over
-        int itemNum = 0;
+        //int itemNum = 0;
         if (numZombiesFailed > 2)
         {
             SceneManager.LoadScene(2);//temporary
         }
 
-        if (leftOrRight == 0)
-            Zombie[leftOrRight].GetComponent<Zombie_Controller>().Anim("Exit", true);
-       
+        /*
+        foreach (Transform child in orderVisual.transform)
+        {
+            if (child.tag != "DontDestroy")
+                Destroy(child.gameObject);
+        }*/
+        
+        DestroyChildren(orderVisual.transform);
 
-        foreach (Transform child in OrderVisuals[leftOrRight].transform)
+        try
+        {
+            for (int x = 0; x <= zombieOrders.Length - 1; x++)
             {
+                if (zombieOrders[x] != null)
+                {
+                    zombieOrders[x] = null;//not null? make it null
 
-            
-
-            Destroy(child.gameObject);
-
-            if (itemNum < 3)
-            {
-                Destroy(zombieOrders[leftOrRight, itemNum]);
-                zombieOrders[leftOrRight, itemNum] = null;
+                }
             }
-                
-                itemNum++;
-            }
+        }
+        catch (System.Exception)
+        {
+            Debug.Log("Ignoring this exception for now");
+        }
+        
 
-        StartCoroutine(ZombieOrder(false, delayTime, leftOrRight));
+
+
+        StartCoroutine(ZombieOrder(false, delayTime));
+
 
     }
-    */
+    
 }

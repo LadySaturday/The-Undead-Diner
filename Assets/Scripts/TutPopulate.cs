@@ -4,31 +4,25 @@ using UnityEngine;
 
 public class TutPopulate : MonoBehaviour
 {
-    public GameObject[] images;
-    private Vector3 position = new Vector3(250,-108);
-    // Start is called before the first frame update
+    public GameObject[] images;//array to hold all tutorial images
+    private Vector3 position = new Vector3(250,-108);//starting position of images
+    private int positionX = 500;//int to space out images evenly
+
     void Start()
     {
-        populate();
-        
+        populate();       
     }
 
     void populate()
     {
-        int x = 0;
         foreach (GameObject image in images)
         {
             Instantiate(image, gameObject.transform);
             image.transform.position = position;
-            position += new Vector3(500, 0);
+            position += new Vector3(positionX, 0);//the next position
 
         }
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

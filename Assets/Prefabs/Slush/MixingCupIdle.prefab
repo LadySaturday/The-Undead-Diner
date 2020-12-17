@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8884835980277017221}
   - component: {fileID: 8884835980277017216}
   - component: {fileID: 8884835980277017223}
+  - component: {fileID: 2723934607138944249}
   - component: {fileID: 8884835980277017222}
   m_Layer: 0
   m_Name: MixingCupIdle
@@ -103,6 +104,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2723934607138944249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8884835980277017220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b731928e531fa9b4b948428f4d2a588d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 7618739453264932545, guid: 16e8a2d043dcb0943b6866f6bdaee4eb, type: 3}
 --- !u!114 &8884835980277017222
 MonoBehaviour:
   m_ObjectHideFlags: 0
