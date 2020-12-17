@@ -6,12 +6,22 @@ public class Timers : MonoBehaviour
 {
     public int maxTime;
     public int inc_dec;//increasing or decreasing
-    
+    private GameObject zombie;
+
+    private void LateUpdate()
+    {
+        outOfTime();
+    }
     // Start is called before the first frame update
- 
+
     void Start()
     {
-        animate();   
+        animate();
+
+        if(gameObject.transform.position.x<0)//left
+            zombie = GameObject.FindGameObjectWithTag("ZombieL");
+        else
+            zombie = GameObject.FindGameObjectWithTag("ZombieR");//this sucks, will redo this later
     }
 
     private void animate()
@@ -23,9 +33,22 @@ public class Timers : MonoBehaviour
     {
         Destroy(gameObject.transform.parent);
     }
-    // Update is called once per frame
-    void Update()
+
+    private void outOfTime()
     {
-        
+        if (!LeanTween.isTweening(gameObject))
+        {
+            try
+            {
+                zombie.GetComponent<DoubleOrderManager>().ZombieFailed();
+                Destroy(gameObject);
+            }
+            catch (System.NullReferenceException)
+            {
+                Debug.Log("2 timers expired simultaneously");
+            }
+        }
+
+
     }
 }

@@ -2738,6 +2738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 7618739453264932545, guid: 16e8a2d043dcb0943b6866f6bdaee4eb, type: 3}
   canvas: {fileID: 993629385}
+  position: {x: 0, y: 2, z: 0}
 --- !u!1 &831386114
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,9 +4324,10 @@ GameObject:
   - component: {fileID: 1385193035}
   - component: {fileID: 1385193034}
   - component: {fileID: 1385193032}
+  - component: {fileID: 1385193033}
   m_Layer: 0
   m_Name: RightZombie
-  m_TagString: Untagged
+  m_TagString: ZombieR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4373,6 +4375,21 @@ MonoBehaviour:
   - {fileID: 166520876013979306, guid: 3c4763e586d5ab1408a3ec2efbe5e2f9, type: 3}
   - {fileID: 1718422328850863657, guid: 9060181f26276194d9af9a4706f776d4, type: 3}
   - {fileID: 7108335311723095180, guid: a49b153fa0a26d840b91015508e8df88, type: 3}
+--- !u!114 &1385193033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385193030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16581e8ae78f1cd45b02f8d79d1f2779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 8112895628192419302, guid: 26c03776d86f66e46b21b906cc4109f7, type: 3}
+  canvas: {fileID: 993629385}
+  position: {x: -0.5, y: -2, z: 0}
 --- !u!114 &1385193034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4634,9 +4651,10 @@ GameObject:
   - component: {fileID: 1448017934}
   - component: {fileID: 1448017938}
   - component: {fileID: 1448017937}
+  - component: {fileID: 1448017939}
   m_Layer: 0
   m_Name: LeftZombie
-  m_TagString: Untagged
+  m_TagString: ZombieL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4815,6 +4833,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4787374, y: 5.1990776}
   m_EdgeRadius: 0
+--- !u!114 &1448017939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448017932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16581e8ae78f1cd45b02f8d79d1f2779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 8112895628192419302, guid: 26c03776d86f66e46b21b906cc4109f7, type: 3}
+  canvas: {fileID: 993629385}
+  position: {x: 0, y: -2, z: 0}
 --- !u!4 &1456258204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2176756225064172367, guid: 9571c940524cd7d4c988270d07795981,
@@ -7161,6 +7194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 7618739453264932545, guid: 16e8a2d043dcb0943b6866f6bdaee4eb, type: 3}
   canvas: {fileID: 993629385}
+  position: {x: 0, y: 2, z: 0}
 --- !u!114 &3849064014932732582
 MonoBehaviour:
   m_ObjectHideFlags: 0

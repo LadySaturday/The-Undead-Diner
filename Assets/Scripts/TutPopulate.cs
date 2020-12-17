@@ -15,7 +15,6 @@ public class TutPopulate : MonoBehaviour
 
     void populate()
     {
-        int x = 0;
         foreach (GameObject image in images)
         {
             Instantiate(image, gameObject.transform);
