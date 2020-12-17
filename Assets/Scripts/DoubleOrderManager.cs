@@ -220,14 +220,22 @@ public class DoubleOrderManager : MonoBehaviour
         
         DestroyChildren(orderVisual.transform);
 
-        for (int x = 0; x <= zombieOrders.Length - 1; x++)
+        try
         {
-            if (zombieOrders[x] != null)
+            for (int x = 0; x <= zombieOrders.Length - 1; x++)
             {
-                zombieOrders[x] = null;//not null? make it null
+                if (zombieOrders[x] != null)
+                {
+                    zombieOrders[x] = null;//not null? make it null
 
+                }
             }
         }
+        catch (System.Exception)
+        {
+            Debug.Log("Ignoring this exception for now");
+        }
+        
 
 
 

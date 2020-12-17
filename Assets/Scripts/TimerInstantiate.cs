@@ -25,7 +25,7 @@ public class TimerInstantiate : MonoBehaviour
 
     public void destroyTimer()
     {
-        Destroy(timerClone);
+        Destroy(timerClone.gameObject);
     }
 
     

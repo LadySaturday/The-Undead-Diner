@@ -29,10 +29,6 @@ public class Timers : MonoBehaviour
         LeanTween.scaleX(gameObject, inc_dec, maxTime);
     }
 
-    private void OnDestroy()
-    {
-        Destroy(gameObject.transform.parent);
-    }
 
     private void outOfTime()
     {
