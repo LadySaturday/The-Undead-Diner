@@ -7,6 +7,7 @@ public class Timers : MonoBehaviour
     public int maxTime;
     public int inc_dec;//increasing or decreasing
     private GameObject zombie;
+    private OrderManager orderManager;
 
     private void LateUpdate()
     {
@@ -22,6 +23,8 @@ public class Timers : MonoBehaviour
             zombie = GameObject.FindGameObjectWithTag("ZombieL");
         else
             zombie = GameObject.FindGameObjectWithTag("ZombieR");//this sucks, will redo this later
+
+        orderManager=zombie.GetComponent<OrderManager>();
     }
 
     private void animate()
@@ -36,7 +39,7 @@ public class Timers : MonoBehaviour
         {
             try
             {
-                zombie.GetComponent<DoubleOrderManager>().ZombieFailed();
+                orderManager.ZombieFailed();
                 Destroy(gameObject);
             }
             catch (System.NullReferenceException)

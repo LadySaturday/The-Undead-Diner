@@ -4,11 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class DoubleOrderManager : MonoBehaviour
-{
-    //The purpose of this script is to act as the order system. Randomize orders. See if the player has the right order. 
+   //The purpose of this script is to act as the order system. Randomize orders. See if the player has the right order. 
     //If they do, destroy what they're holding. Spawn the next order
+public class OrderManager : MonoBehaviour
+{
+ 
 
     //Reference to products and to player
     public GameObject[] products;//ALL products being served
@@ -26,19 +26,17 @@ public class DoubleOrderManager : MonoBehaviour
     //public GameObject zTimer;//reference to the zombie countdown timer
     private static int numZombiesFailed;//the number of zombies the player didn't feed
     private Animator anim;//animator attached to Zombie
-
-
-    private bool isThereAnOrder;
+    
 
     private Vector3 imageOffset = new Vector3(0.9f, -10);//the offset for the items in the order visual
 
 
-    System.Random rnd = new System.Random();//new random, for orders
+    private System.Random rnd = new System.Random();//new random, for orders
 
     private float delayTime;//a random time to wait between orders appearing.
 
     private int maxOrderNumber=3;//max number of items in an order
-    private bool makingOrder;
+    private bool makingOrder;//keeps track of whether an order is currently being claculated
 
     void Start()
     {
@@ -50,10 +48,12 @@ public class DoubleOrderManager : MonoBehaviour
         makingOrder = false;
         rightHandObject = GameObject.FindGameObjectWithTag("RightHand");
 
-        if(gameObject.name=="RightZombie")
+        if (gameObject.name == "RightZombie")
             StartCoroutine(ZombieOrder(false, delayTime));
         else
-            StartCoroutine(ZombieOrder(false, 5));
+            StartCoroutine(ZombieOrder(false, delayTime+1));
+
+
 
         orderVisual = gameObject.transform.GetChild(1).gameObject;
 
@@ -123,7 +123,6 @@ public class DoubleOrderManager : MonoBehaviour
 
     }
 
-
     
 
     public void CheckOrder()
@@ -158,11 +157,13 @@ public class DoubleOrderManager : MonoBehaviour
             DestroyChildren(orderVisual.transform);
             
 
-            anim.SetTrigger("Exit");
-            delayTime = rnd.Next(1, 4);//wait before new order appears
-                                       // isThereAnOrder = true;
+           
+
             if (!makingOrder)
             {
+                anim.SetTrigger("Exit");
+                delayTime = rnd.Next(1, 4);//wait before new order appears
+
                 makingOrder = true;
                 StartCoroutine(ZombieOrder(false, delayTime));
 
@@ -176,17 +177,17 @@ public class DoubleOrderManager : MonoBehaviour
 
     private bool isOrder()
     {
-        isThereAnOrder = false;//do we need to create a new order?
+  
         for (int x = 0; x <= zombieOrders.Length - 1; x++)
         {
             if (zombieOrders[x] != null)
             {
-                isThereAnOrder = true;//will only be turned "true" if an item in the Zombie's order still exists. Otherwise, a new order will be made
+                return true;//will only be turned "true" if an item in the Zombie's order still exists. Otherwise, a new order will be made
 
             }
         }
        
-        return isThereAnOrder;
+        return false;
     }
 
     public static void DestroyChildren(Transform transform)
@@ -216,13 +217,6 @@ public class DoubleOrderManager : MonoBehaviour
             SceneManager.LoadScene(2);//temporary
         }
 
-        /*
-        foreach (Transform child in orderVisual.transform)
-        {
-            if (child.tag != "DontDestroy")
-                Destroy(child.gameObject);
-        }*/
-        
         DestroyChildren(orderVisual.transform);
 
         try

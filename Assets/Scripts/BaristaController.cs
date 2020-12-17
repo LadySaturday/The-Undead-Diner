@@ -93,8 +93,6 @@ public class BaristaController : MonoBehaviour
             if (Vector2.Distance(transform.position, target.transform.position) < 0.01f)//Only do a thing once Barista has arrived
             {
                 anim.SetFloat("Speed", 0);
-
-
                 
                 ItemReached();//check what to do about the item
 
@@ -114,7 +112,12 @@ public class BaristaController : MonoBehaviour
                 target.gameObject.transform.parent.GetComponent<Animator>().SetBool("handsAreFull", false);
         }               
         if (target.gameObject.transform.parent.GetComponent<Animator>().GetBool("canSetTrigger"))
+        {
+            //we need to check if the next target in the queue is the same item. If it is, skip the animation to speed up instantiation
+
             target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
+        }
+        
 
         target = null;
 
