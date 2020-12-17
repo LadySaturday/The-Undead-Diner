@@ -47,7 +47,7 @@ public class DoubleOrderManager : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
 
         leftHandObject = GameObject.FindGameObjectWithTag("LeftHand");
-
+        makingOrder = false;
         rightHandObject = GameObject.FindGameObjectWithTag("RightHand");
 
         if(gameObject.name=="RightZombie")
@@ -82,8 +82,10 @@ public class DoubleOrderManager : MonoBehaviour
 
     IEnumerator ZombieOrder(bool status, float delayTime)
     {
+        makingOrder = true;
 
         yield return new WaitForSeconds(delayTime);
+
          rnd = new System.Random();
 
 
@@ -154,14 +156,17 @@ public class DoubleOrderManager : MonoBehaviour
         if (!isOrder())
         {
             DestroyChildren(orderVisual.transform);
+            
+
             anim.SetTrigger("Exit");
             delayTime = rnd.Next(1, 4);//wait before new order appears
                                        // isThereAnOrder = true;
             if (!makingOrder)
             {
+                makingOrder = true;
                 StartCoroutine(ZombieOrder(false, delayTime));
 
-                makingOrder = true;
+                
             }
 
         }
