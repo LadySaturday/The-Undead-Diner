@@ -102,7 +102,6 @@ public class DoubleOrderManager : MonoBehaviour
 
             imageOffset.y += -0.95f;//places next order visual lower
         }
-
         
         makingOrder = false;
 
@@ -149,11 +148,6 @@ public class DoubleOrderManager : MonoBehaviour
                 }
             }
         }
-        ///////THE BUG IS CAUSED BY A COUBLE CLIIIIIIIICKCKKCKCKCKCKKCK
-        
-
-
-
         
             isThereAnOrder = false;//do we need to create a new order?
             for (int x = 0; x <= zombieOrders.Length-1; x++)

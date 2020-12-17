@@ -6,7 +6,9 @@ public class Timers : MonoBehaviour
 {
     public int maxTime;
     public int inc_dec;//increasing or decreasing
+    
     // Start is called before the first frame update
+ 
     void Start()
     {
         animate();   
