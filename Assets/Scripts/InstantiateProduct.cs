@@ -29,18 +29,34 @@ public class InstantiateProduct : MonoBehaviour
 
     public void instantiateItemInHand(int position)//position is set in the inspector
     {
-        
-       
-        if (!baristaController.leftHandIsFull)//left hand isn't full
+
+        if (!DoubleClick(position))
         {
-            Instantiate(product[position], leftHand.transform) ;//put the object in the left hand
-            
+            if (!baristaController.leftHandIsFull)//left hand isn't full
+            {
+                Instantiate(product[position], leftHand.transform);//put the object in the left hand
+
+            }
+            else if (!baristaController.rightHandIsFull)//right hand isn't full
+            {
+                Instantiate(product[position], rightHand.transform);//put the object in the right hand
+
+            }
         }
-        else if (!baristaController.rightHandIsFull)//right hand isn't full
+        else
         {
-            Instantiate(product[position], rightHand.transform);//put the object in the right hand
-            
+            if (!baristaController.leftHandIsFull)//left hand isn't full
+            {
+                Instantiate(product[position], leftHand.transform);//put the object in the left hand
+
+            }
+            if (!baristaController.rightHandIsFull)//right hand isn't full
+            {
+                Instantiate(product[position], rightHand.transform);//put the object in the right hand
+
+            }
         }
+            
     
     }
    

@@ -1,0 +1,857 @@
+fileFormatVersion: 2
+guid: 14777e7de5835304fb243dca075fc05a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4996367797138835525
+    second: Zomboss_accessories_0
+  - first:
+      213: -7313144691885711153
+    second: Zomboss_accessories_1
+  - first:
+      213: 2539556077780007900
+    second: Zomboss_accessories_2
+  - first:
+      213: -4442942246183590413
+    second: Zomboss_accessories_3
+  - first:
+      213: -8896235647475022101
+    second: Zomboss_accessories_4
+  - first:
+      213: -2300769848007958083
+    second: Zomboss_accessories_5
+  - first:
+      213: 5180098935949092217
+    second: Zomboss_accessories_6
+  - first:
+      213: 7815872020230115538
+    second: Zomboss_accessories_7
+  - first:
+      213: -4657570067295111711
+    second: Zomboss_accessories_8
+  - first:
+      213: -5240333305436155407
+    second: Zomboss_accessories_9
+  - first:
+      213: -2156065319390057534
+    second: Zomboss_accessories_10
+  - first:
+      213: 9025249691885728949
+    second: Zomboss_accessories_11
+  - first:
+      213: 1789828425888687723
+    second: Zomboss_accessories_12
+  - first:
+      213: -5025267385033412659
+    second: Zomboss_accessories_13
+  - first:
+      213: 7028529954711808555
+    second: Zomboss_accessories_14
+  - first:
+      213: -6894861178049927050
+    second: Zomboss_accessories_15
+  - first:
+      213: 5968569799084445898
+    second: Zomboss_accessories_16
+  - first:
+      213: 2880217556441030691
+    second: Zomboss_accessories_17
+  - first:
+      213: 8602477079697037945
+    second: Zomboss_accessories_18
+  - first:
+      213: 4674384319834913973
+    second: Zomboss_accessories_19
+  - first:
+      213: -1387003767359551378
+    second: Zomboss_accessories_20
+  - first:
+      213: 3829038750254502030
+    second: Zomboss_accessories_21
+  - first:
+      213: 1701135891299911031
+    second: Zomboss_accessories_22
+  - first:
+      213: 5457919058955610185
+    second: Zomboss_accessories_23
+  - first:
+      213: 7221747658605978288
+    second: Zomboss_accessories_24
+  - first:
+      213: -6654147464933745949
+    second: Zomboss_accessories_25
+  - first:
+      213: 6909569860691709412
+    second: Zomboss_accessories_26
+  - first:
+      213: 4195849087737336292
+    second: Zomboss_accessories_0
+  - first:
+      213: -5700105170723673333
+    second: Zomboss_accessories_1
+  - first:
+      213: 1664125795821792251
+    second: Zomboss_accessories_2
+  - first:
+      213: -2287268560851062136
+    second: Zomboss_accessories_3
+  - first:
+      213: 3739219787427446279
+    second: Zomboss_accessories_4
+  - first:
+      213: 1320558713696539502
+    second: Zomboss_accessories_5
+  - first:
+      213: -6690068554347487526
+    second: Zomboss_accessories_6
+  - first:
+      213: 1445184538996863079
+    second: Zomboss_accessories_7
+  - first:
+      213: -4973471591314690586
+    second: Zomboss_accessories_8
+  - first:
+      213: -8605418357709657257
+    second: Zomboss_accessories_9
+  - first:
+      213: 7179931559573609022
+    second: Zomboss_accessories_10
+  - first:
+      213: -7922788850513254314
+    second: Zomboss_accessories_11
+  - first:
+      213: 7788796842291382465
+    second: Zomboss_accessories_12
+  - first:
+      213: -9099267027802715449
+    second: Zomboss_accessories_13
+  - first:
+      213: 2066112074590625692
+    second: Zomboss_accessories_14
+  - first:
+      213: -3317599908555226834
+    second: Zomboss_accessories_15
+  - first:
+      213: -3486588631991171628
+    second: Zomboss_accessories_16
+  - first:
+      213: 7776876695294472538
+    second: Zomboss_accessories_17
+  - first:
+      213: -6511679931197989622
+    second: Zomboss_accessories_18
+  - first:
+      213: -8382747350788895262
+    second: Zomboss_accessories_19
+  - first:
+      213: 5542618074707937871
+    second: Zomboss_accessories_20
+  - first:
+      213: -4231753561417845449
+    second: Zomboss_accessories_21
+  - first:
+      213: -6279687031034777779
+    second: Zomboss_accessories_22
+  - first:
+      213: 3862579670563047232
+    second: Zomboss_accessories_23
+  - first:
+      213: 7022984286310293723
+    second: Zomboss_accessories_24
+  - first:
+      213: 8156790763373021536
+    second: Zomboss_accessories_25
+  - first:
+      213: 8759633854687496219
+    second: Zomboss_accessories_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zomboss_accessories_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1811
+        width: 198
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e11bb5c386aa3a30800000000000000
+      internalID: 4195849087737336292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1924
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0be5a43c8825e0b0800000000000000
+      internalID: -5700105170723673333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_2
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1831
+        width: 168
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfba5892899281710800000000000000
+      internalID: 1664125795821792251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1904
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882bd84cc5df140e0800000000000000
+      internalID: -2287268560851062136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1877
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e79bed59064e330800000000000000
+      internalID: 3739219787427446279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_5
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1884
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63ddea4721935210800000000000000
+      internalID: 1320558713696539502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_6
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1826
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade5b17681a1823a0800000000000000
+      internalID: -6690068554347487526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1812
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7607bc96ea35e0410800000000000000
+      internalID: 1445184538996863079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1792
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ede03330fdaafab0800000000000000
+      internalID: -4973471591314690586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_9
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1567
+        width: 232
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b271dd899639880800000000000000
+      internalID: -8605418357709657257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_10
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1520
+        width: 278
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a500866bd34a360800000000000000
+      internalID: 7179931559573609022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_11
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1656
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6586bb664899c0290800000000000000
+      internalID: -7922788850513254314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_12
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1541
+        width: 183
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c84674167d571c60800000000000000
+      internalID: 7788796842291382465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_13
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1226
+        width: 152
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca056329d8e8b180800000000000000
+      internalID: -9099267027802715449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1460
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f9e103cfd4cac10800000000000000
+      internalID: 2066112074590625692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_15
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1397
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2182b7e57485f1d0800000000000000
+      internalID: -3317599908555226834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_16
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1395
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d54048ac162d9fc0800000000000000
+      internalID: -3486588631991171628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_17
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1223
+        width: 171
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a517a0596240deb60800000000000000
+      internalID: 7776876695294472538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_18
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1283
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d57e95a9dd1a5a0800000000000000
+      internalID: -6511679931197989622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_19
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 888
+        width: 234
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed816ab2bf7aab80800000000000000
+      internalID: -8382747350788895262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_20
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1252
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a40acd5c55bec40800000000000000
+      internalID: 5542618074707937871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1040
+        width: 158
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735f1b28e8ac545c0800000000000000
+      internalID: -4231753561417845449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_22
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 984
+        width: 149
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f6b8e9ae11ad8a0800000000000000
+      internalID: -6279687031034777779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_23
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 447
+        width: 227
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0474e8cdeb3aa9530800000000000000
+      internalID: 3862579670563047232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 420
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0eca0cff6a67160800000000000000
+      internalID: 7022984286310293723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_25
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 4
+        width: 223
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06949069bfdb23170800000000000000
+      internalID: 8156790763373021536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zomboss_accessories_26
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 387
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18422f8498709970800000000000000
+      internalID: 8759633854687496219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

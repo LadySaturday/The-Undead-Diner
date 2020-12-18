@@ -1581,6 +1581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrainChiller
       objectReference: {fileID: 0}
+    - target: {fileID: 1292601949700739515, guid: 0d7accfe61a86fa49adcb38d81a9c881,
+        type: 3}
+      propertyPath: m_TagString
+      value: BrainFood
+      objectReference: {fileID: 0}
     - target: {fileID: 4609035198984815007, guid: 0d7accfe61a86fa49adcb38d81a9c881,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2660,6 +2665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Positioner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292601949700739515, guid: 0d7accfe61a86fa49adcb38d81a9c881,
+        type: 3}
+      propertyPath: m_TagString
+      value: CupOfJoeStep3
       objectReference: {fileID: 0}
     - target: {fileID: 4609035198984815007, guid: 0d7accfe61a86fa49adcb38d81a9c881,
         type: 3}
@@ -5648,6 +5658,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Positioner
       objectReference: {fileID: 0}
+    - target: {fileID: 1292601949700739515, guid: 0d7accfe61a86fa49adcb38d81a9c881,
+        type: 3}
+      propertyPath: m_TagString
+      value: CupOfJoeStep1
+      objectReference: {fileID: 0}
     - target: {fileID: 4609035198984815007, guid: 0d7accfe61a86fa49adcb38d81a9c881,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6834,6 +6849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniFridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292601949700739515, guid: 0d7accfe61a86fa49adcb38d81a9c881,
+        type: 3}
+      propertyPath: m_TagString
+      value: CupOfJoeStep2
       objectReference: {fileID: 0}
     - target: {fileID: 4609035198984815007, guid: 0d7accfe61a86fa49adcb38d81a9c881,
         type: 3}
