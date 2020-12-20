@@ -41,8 +41,8 @@ public class Click : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
         if (hit.collider != null)
         {
-            targetQueue.Enqueue(hit.collider.gameObject);//Add that product's position to the queue
-          
+           baristaController.onQueue(hit.collider.gameObject);//Add that product's position to the queue
+            
         }
 
 

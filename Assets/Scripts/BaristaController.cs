@@ -11,7 +11,9 @@ public class BaristaController : MonoBehaviour
     public GameObject target;//position of target destination
     public Queue<GameObject> targetQueue = new Queue<GameObject>();//queue of target positions
     private Vector2 position;//Barista's current position
-    
+    public GameObject[] numberArray;
+    private Queue<GameObject> numberQueue;
+    GameObject[] tempNumberQueue ;
     private Animator anim;
 
 
@@ -113,7 +115,6 @@ public class BaristaController : MonoBehaviour
         }               
         if (target.gameObject.transform.parent.GetComponent<Animator>().GetBool("canSetTrigger"))
         {
-            //we need to check if the next target in the queue is the same item. If it is, skip the animation to speed up instantiation
 
             target.gameObject.transform.parent.GetComponent<Animator>().SetTrigger("targetReached"); //animate dem bad boys
         }
@@ -121,7 +122,60 @@ public class BaristaController : MonoBehaviour
 
         target = null;
 
-        targetQueue.Dequeue();//Remove position from the list
+        onDequeue();//Remove position from the list
     }
 
+   
+
+    //onQueue will add the next number to the end of the queue, and instantiate number
+
+    Vector3 setPosition(GameObject parent)
+    {
+        if(parent.transform.childCount>0)
+        {
+           return parent.transform.GetChild(0).transform.position;//get positioner position
+        }
+        else
+        {
+            return parent.transform.position;
+        }
+
+ 
+
+    }
+
+    //onDequeue will  remove the first number, and shuffle the rest
+    public void onQueue(GameObject t)
+    {
+        GameObject num;
+        targetQueue.Enqueue(t);
+        num=Instantiate(numberArray[targetQueue.Count-1], 
+           setPosition(t), 
+            Quaternion.identity);
+       
+
+    }
+
+    void onDequeue()
+    {
+        targetQueue.Dequeue();
+        tempNumberQueue = targetQueue.ToArray();//indexable version of the queue
+        //need to shuffle the stuff
+        GameObject num;
+        GameObject[] q=GameObject.FindGameObjectsWithTag("numberedQueue");
+
+        foreach (GameObject number in q){
+            Destroy(number);
+        }
+       
+
+
+        //instantiate new stuff
+        for (int x = 0; x < targetQueue.Count ; x++)
+        {
+           num= Instantiate(numberArray[x], setPosition(tempNumberQueue[x]),Quaternion.identity);
+        }
+
+    }
+    
 }

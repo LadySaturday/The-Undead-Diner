@@ -127,51 +127,52 @@ public class OrderManager : MonoBehaviour
 
     public void CheckOrder()
     {
-        if(zombieOrders.Length>0)
-        for (int zombieOrderNumber = 0; zombieOrderNumber<=zombieOrders.Length-1; zombieOrderNumber++)//increases to test every item in Zombie's order
+        if (zombieOrders != null)//an order exists
         {
-            for (int playerHandNumber = 0; playerHandNumber < 2; playerHandNumber++)//increases to test every item in Player's hand
-            {
-                if (playerHolding[playerHandNumber] != null)//player doesn't have anything in that hand? Don't test it
-                {
-                    if (zombieOrders[ zombieOrderNumber] != null)
-                    {
-                        if (playerHolding[playerHandNumber].tag == zombieOrders[ zombieOrderNumber].tag)//checks both hands against every item in the zombie's order
-                        {
-                            
-                            Destroy(playerHolding[playerHandNumber].gameObject);
-                            playerHolding[playerHandNumber] = null;
-                            Destroy(zombieOrders[ zombieOrderNumber].gameObject);
-                            zombieOrders[ zombieOrderNumber] = null;//that item becomes null
-                               
-                        }
-                    }
+            //this could ABSOLUTELY BE OPTIMIZED
 
+            for (int zombieOrderNumber = 0; zombieOrderNumber <= zombieOrders.Length - 1; zombieOrderNumber++)//increases to test every item in Zombie's order
+            {
+                for (int playerHandNumber = 0; playerHandNumber < 2; playerHandNumber++)//increases to test every item in Player's hand
+                {
+                    if (playerHolding[playerHandNumber] != null)//player doesn't have anything in that hand? Don't test it
+                    {
+                        if (zombieOrders[zombieOrderNumber] != null)
+                        {
+                            if (playerHolding[playerHandNumber].tag == zombieOrders[zombieOrderNumber].tag)//checks both hands against every item in the zombie's order
+                            {
+
+                                Destroy(playerHolding[playerHandNumber].gameObject);
+                                playerHolding[playerHandNumber] = null;
+                                Destroy(zombieOrders[zombieOrderNumber].gameObject);
+                                zombieOrders[zombieOrderNumber] = null;//that item becomes null
+
+                            }
+                        }
+
+                    }
                 }
             }
-        }
 
 
-        if (!isOrder())
-        {
-            DestroyChildren(orderVisual.transform);
-            
-
-           
-
-            if (!makingOrder)
+            if (!isOrder())
             {
-                anim.SetTrigger("Exit");
-                delayTime = rnd.Next(1, 4);//wait before new order appears
+                DestroyChildren(orderVisual.transform);
 
-                makingOrder = true;
-                StartCoroutine(ZombieOrder(false, delayTime));
 
-                
+                if (!makingOrder)
+                {
+                    anim.SetTrigger("Exit");
+                    delayTime = rnd.Next(1, 4);//wait before new order appears
+
+                    makingOrder = true;
+                    StartCoroutine(ZombieOrder(false, delayTime));
+
+
+                }
+
             }
-
         }
-
 
     }
 

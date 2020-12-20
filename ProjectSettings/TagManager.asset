@@ -19,6 +19,7 @@ TagManager:
   - Zombie
   - ZombieL
   - ZombieR
+  - numberedQueue
   layers:
   - Default
   - TransparentFX
